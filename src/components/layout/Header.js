@@ -1,7 +1,9 @@
+import './Header.scss'
 import React, { useState } from 'react'
 import classnames from 'classnames'
+import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
-import Button from '../common/Button'
+import Button from '../common/elements/Button'
 
 const Header = () => {
 
@@ -11,7 +13,7 @@ const Header = () => {
         <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
             <div className='navbar-brand'>
                 <Link className='navbar-item' to='/'>
-                    <img src='https://bulma.io/images/bulma-logo.png' width='112' height='28' alt='logo'/>
+                    <img src={logo} width='112' height='28' alt='logo'/>
                 </Link>
                 <Button 
                     onClick={() => {toggleNavbar(!is_active)}} 
