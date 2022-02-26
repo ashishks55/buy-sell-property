@@ -1,0 +1,10 @@
+@charset "utf-8";
+@import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
+
+$link: #044f40;
+$primary: #0a856e;
+$danger: #c95055;
+$success: #229B45;
+$warning: #FF832B;
+
+@import "../../node_modules/bulma/bulma.sass";
