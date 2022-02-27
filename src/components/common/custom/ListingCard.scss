@@ -1,0 +1,32 @@
+.card{
+    height: 100%;
+    margin: 2rem 0rem -1rem;
+    cursor: pointer;
+    .card-content{
+        p{
+            margin-bottom: 0.5rem;
+        }
+        .price{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .date{
+            font-size: 0.8rem;
+        }
+        .specs{
+            span{
+                margin-right: 1rem;
+            }
+            .area, .beds, .bathrooms, .parking{
+                font-weight: 600;
+            }
+        }
+        .type, .address{
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+        .type{
+            font-weight: 600;
+        }
+    }
+}

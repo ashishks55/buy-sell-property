@@ -7,7 +7,7 @@ import Button from '../common/elements/Button'
 
 const Header = () => {
 
-    const [is_active, toggleNavbar] = useState(false);
+    const [is_active, toggleNavbar] = useState(false)
 
     return (
         <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>

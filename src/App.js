@@ -15,7 +15,7 @@ function App() {
 			</Routes>
 		</Layout>
 	</div>
-  );
+  )
 }
 
 export default App

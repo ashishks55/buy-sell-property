@@ -1,7 +1,7 @@
 import './Home.scss'
 import React from 'react'
-import SearchProperties from '../common/custom/SearchProperties';
-import FeaturedListings from '../common/custom/FeaturedListings';
+import SearchProperties from '../common/custom/SearchProperties'
+import FeaturedListings from '../common/custom/FeaturedListings'
 
 const Home = () => {
 	return (

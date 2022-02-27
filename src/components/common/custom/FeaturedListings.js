@@ -1,30 +1,29 @@
 import React, {useState, useEffect} from 'react'
-import { getFeaturedListings } from '../../../services/ListingService'
+import { getFeaturedListingsAPI } from '../../../services/ListingService'
+import ListingList from './ListingList'
 
 const FeaturedListings = () => {
 
-	const [listings, setListings] = useState([]);
+	const [listings, setListings] = useState([])
+	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
-		let mounted = true;
 		getFeaturedListings()
-			.then(listings => {
-				if(mounted) {
-					setListings(listings)
-				}
-			})
-		return () => mounted = false;
 	}, [])
+
+	const getFeaturedListings = async () => {
+		const listings = await getFeaturedListingsAPI()
+		setListings(listings)
+		setLoading(false)
+	}
 
 	return (
 		<div className='featured-listings'>
 			<h3 className='is-size-4 has-text-weight-bold'>Featured Listings</h3>
-			{
-				listings.map(listing => (
-					<div className="listing" key={listing.id}>
-					</div>
-				))
-			}
+			<ListingList 
+				loading={loading}
+				listings={listings}
+			/>
 		</div>
 	)
 }

@@ -5,14 +5,14 @@ import Button from '../elements/Button'
 
 const SearchProperties = () => {
 
-	const [input, setInput] = useState('');
+	const [input, setInput] = useState('')
 
 	const onChange = (input) => {
-        setInput(input);
+        setInput(input)
     }
 
 	const onSubmit = (e) => {
-		e.preventDefault();
+		e.preventDefault()
 	}
 
 	return (
