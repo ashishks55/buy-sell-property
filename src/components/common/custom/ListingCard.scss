@@ -2,6 +2,17 @@
     height: 100%;
     margin: 2rem 0rem -1rem;
     cursor: pointer;
+    .card-image{
+        figure{
+            overflow: hidden;
+            img{
+                transition: transform .2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
     .card-content{
         p{
             margin-bottom: 0.5rem;

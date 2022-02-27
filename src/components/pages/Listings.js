@@ -1,6 +1,8 @@
+import './Listings.scss'
 import React, {useState, useEffect} from 'react'
 import ListingList from '../common/custom/ListingList'
 import { getAllListingsAPI } from '../../services/ListingService'
+import SearchProperties from '../common/custom/SearchProperties';
 
 const Listings = () => {
 
@@ -19,6 +21,9 @@ const Listings = () => {
 
 	return (
 		<section className='section'>
+			<SearchProperties
+				showFilters={true}
+			/>
 			<h3 className='is-size-4 has-text-weight-bold'>Listings</h3>
 			<ListingList
 				loading={loading}

@@ -17,7 +17,7 @@ const ListingList = ({listings, loading}) => {
                         listings && listings.length 
                         ?
                             listings.map(listing => (
-                                <div className='column is-12-mobile is-6-tablet is-4-desktop' key={listing.id}>
+                                <div className='column is-12-mobile is-6-tablet is-4-desktop animate__animated animate__fadeIn' key={listing.id}>
                                     <ListingCard
                                         price={listing.price}
                                         images={listing.images}

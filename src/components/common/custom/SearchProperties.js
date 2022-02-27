@@ -1,9 +1,10 @@
 import './SearchProperties.scss'
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import Input from '../elements/Input'
 import Button from '../elements/Button'
 
-const SearchProperties = () => {
+const SearchProperties = ({showFilters}) => {
 
 	const [input, setInput] = useState('')
 
@@ -11,12 +12,8 @@ const SearchProperties = () => {
         setInput(input)
     }
 
-	const onSubmit = (e) => {
-		e.preventDefault()
-	}
-
 	return (
-		<form onSubmit={onSubmit} className='search-properties-form is-flex'>
+		<div className='search-properties-form is-flex'>
 			<Input
 				onChange={onChange}
 				value={input}
@@ -25,15 +22,25 @@ const SearchProperties = () => {
 				icon={'fa-solid fa-location-dot'}
 				placeholder='Where are you looking?'
 			/>
-			<Button
-				title='Search' 
-				className='is-success'
-				type='submit'
-				onClick={() => {}}
-				icon={'fa-solid fa-magnifying-glass'}
-			/>
-		</form>
+			{showFilters ?
+				<Button
+					title='' 
+					className='is-outlined'
+					type='button'
+					onClick={() => {}}
+					icon={'fa-solid fa-filter'}
+				/> 
+			: null}
+		</div>
 	)
+}
+
+SearchProperties.propTypes = {
+    showFilters: PropTypes.bool
+}
+
+SearchProperties.defaultProps = {
+    showFilters: false
 }
 
 export default SearchProperties
