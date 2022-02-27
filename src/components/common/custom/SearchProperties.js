@@ -22,7 +22,6 @@ const SearchProperties = () => {
 				value={input}
 				name={'search'}
 				required={true}
-				autoFocus={true}
 				icon={'fa-solid fa-location-dot'}
 				placeholder='Where are you looking?'
 			/>
@@ -31,7 +30,6 @@ const SearchProperties = () => {
 				className='is-success'
 				type='submit'
 				onClick={() => {}}
-				disabled={!input}
 				icon={'fa-solid fa-magnifying-glass'}
 			/>
 		</form>
