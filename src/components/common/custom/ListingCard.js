@@ -32,7 +32,7 @@ const ListingCard = ({
                 <span className='date has-text-grey'>Listed on {moment.unix(listingDate).format('DD MMM YYYY')}</span>
             </p>
             <p className="specs">
-                <span className='area'>{areaRangeStart}-{areaRangeEnd} sqft</span>
+                <span className='area'>{areaRangeStart.toLocaleString('en-US')}-{areaRangeEnd.toLocaleString('en-US')} sqft</span>
                 <span className='beds'>{bedrooms} bd</span>
                 <span className='bathrooms'>{bathrooms} ba</span>
                 <span className='parking'>{parkingCount} prkg</span>

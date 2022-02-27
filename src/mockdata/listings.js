@@ -43,7 +43,7 @@ export const all_listings = [
         price: 649787,
         area_range: {
             start: 1234,
-            end: 1
+            end: 9000
         },
         parking_count: 2,
         bedrooms: 2,
@@ -86,7 +86,7 @@ export const all_listings = [
         price: 649787,
         area_range: {
             start: 1234,
-            end: 1
+            end: 9000
         },
         parking_count: 2,
         bedrooms: 2,
@@ -129,7 +129,7 @@ export const all_listings = [
         price: 649787,
         area_range: {
             start: 1234,
-            end: 1
+            end: 9000
         },
         parking_count: 2,
         bedrooms: 2,
@@ -172,7 +172,7 @@ export const all_listings = [
         price: 649787,
         area_range: {
             start: 1234,
-            end: 1
+            end: 9000
         },
         parking_count: 2,
         bedrooms: 2,
