@@ -1,7 +1,8 @@
-@charset "utf-8";
+@charset 'utf-8';
 @import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import './_animation.scss';
+@import './responsive.scss';
 
 $link: #044f40;
 $primary: #0a856e;
@@ -11,4 +12,11 @@ $warning: #FF832B;
 $grey-lighter: #525050;
 $input-placeholder-color: #525050;
 
-@import "../../node_modules/bulma/bulma.sass";
+@import '../../node_modules/bulma/bulma.sass';
+
+.section{
+    padding: 3rem 6rem;
+    @include is-mobile{
+        padding: 3rem 1.5rem;
+    }
+}

@@ -12,7 +12,7 @@ const SearchProperties = () => {
     }
 
 	return (
-		<form className="search-properties-form is-flex">
+		<form className='search-properties-form is-flex'>
 			<Input
 				onChange={onChange}
 				value={input}
