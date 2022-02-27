@@ -1,8 +1,8 @@
+import './ListingList.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
 import ListingCard from './ListingCard'
 import Loader from '../elements/Loader'
-
 
 const ListingList = ({listings, loading}) => {
   return (
@@ -35,7 +35,7 @@ const ListingList = ({listings, loading}) => {
                                     />
                                 </div>
                             ))
-                        : <p className="has-text-centered">No Data Available</p>
+                        : <div className="column no-data"><p className="has-text-centered">No Data Available</p></div>
                     }
                 </div>
         }
