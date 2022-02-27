@@ -11,8 +11,12 @@ const SearchProperties = () => {
         setInput(input);
     }
 
+	const onSubmit = (e) => {
+		e.preventDefault();
+	}
+
 	return (
-		<form className='search-properties-form is-flex'>
+		<form onSubmit={onSubmit} className='search-properties-form is-flex'>
 			<Input
 				onChange={onChange}
 				value={input}

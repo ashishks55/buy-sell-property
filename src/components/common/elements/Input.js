@@ -43,7 +43,8 @@ Input.defaultProps = {
 	placeholder: '',
 	className: '',
 	required: false,
-	autoFocus: false
+	autoFocus: false,
+	type: 'text'
 }
 
 export default Input
