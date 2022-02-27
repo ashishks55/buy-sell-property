@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Buy/Sell Home App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is hoisted on netlify: [Demo Link](https://eager-turing-2ae361.netlify.app/).
 
 ## Available Scripts
 
