@@ -26,10 +26,10 @@ const Header = () => {
             </div>
             <div className={classnames('navbar-menu', {'is-active': is_active})}>
                 <div className='navbar-start'>
-                    <Link className='navbar-item' to='/'>
+                    <Link className='navbar-item' to='/' onClick={() => {toggleNavbar(!is_active)}}>
                         Home
                     </Link>
-                    <Link className='navbar-item' to='/listings'>
+                    <Link className='navbar-item' to='/listings' onClick={() => {toggleNavbar(!is_active)}}>
                         Browse Listings
                     </Link>
                 </div>
