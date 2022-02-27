@@ -7,7 +7,10 @@ const reducer = (state, action) => {
             }
         case 'RESET_FILTERS':
             return {
-                ...action.payload
+                filters: {
+                    ...action.payload.filters,
+                    property_type: []
+                }
             }
         default: 
             return;
