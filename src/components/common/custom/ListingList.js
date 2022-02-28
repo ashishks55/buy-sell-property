@@ -35,7 +35,7 @@ const ListingList = ({listings, loading}) => {
                                     />
                                 </div>
                             ))
-                        : <div className="column no-data"><p className="has-text-centered">No Data Available</p></div>
+                        : <div className='column no-data'><p className='has-text-centered'>No Data Available</p></div>
                     }
                 </div>
         }

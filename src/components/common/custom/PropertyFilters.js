@@ -1,6 +1,6 @@
 import './PropertyFilters.scss'
 import React, { useContext, useState, useEffect } from 'react'
-import classnames from 'classnames';
+import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import { GlobalContext } from '../../../store/GlobalState'
 import { getFilteredListingsCountAPI } from '../../../services/ListingService'
@@ -42,7 +42,7 @@ const PropertyFilters = ({closeModal}) => {
     }
 
     const onPropertyTypeSelect = (e) => {
-        const selected_type = e.target.name ? parseInt(e.target.name) : 0;
+        const selected_type = e.target.name ? parseInt(e.target.name) : 0
         if(selected_type){
             if(local_filters.property_type.includes(selected_type)){
                 local_filters.property_type = local_filters.property_type.filter(property_type => property_type !== selected_type)

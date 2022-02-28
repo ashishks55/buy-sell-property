@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 const Checkbox = ({title, checked, onChange, name}) => {
   return (
-    <label className="checkbox">
-        <input type="checkbox" checked={checked} onChange={onChange} name={name}/>
+    <label className='checkbox'>
+        <input type='checkbox' checked={checked} onChange={onChange} name={name}/>
         {title}
     </label>
   )

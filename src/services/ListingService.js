@@ -23,7 +23,7 @@ export const getFilteredListingsCountAPI = (filters) => new Promise((resolve, re
 })
 
 const filterListings = (all_listings, filters) => {
-    const filtered_listings = [];
+    const filtered_listings = []
     all_listings.forEach(listing => {
         if(listing.bedrooms > filters.bedrooms && listing.bathrooms > filters.bathrooms  && listing.parking > filters.parking && (filters.property_type && filters.property_type.length ? filters.property_type.includes(listing.property_type) : true)){
             filtered_listings.push(listing)

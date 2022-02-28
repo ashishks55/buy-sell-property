@@ -18,7 +18,7 @@ const SearchProperties = ({showFilters}) => {
 
 	const updateSearch = useDebounce(city => {
 		setFilters({...filters, city})
-	}, 500);
+	}, 500)
 
 	useEffect(() => {
         setInput(filters.city)

@@ -27,11 +27,11 @@ const ListingCard = ({
             </figure>
         </div>
         <div className='card-content'>
-            <p className="is-flex is-justify-content-space-between is-align-items-center">
+            <p className='is-flex is-justify-content-space-between is-align-items-center'>
                 <span className='price'>${price.toLocaleString('en-US')}</span>
                 <span className='date has-text-grey'>Listed on {moment.unix(listingDate).format('DD MMM YYYY')}</span>
             </p>
-            <p className="specs">
+            <p className='specs'>
                 <span className='area'>{areaRangeStart.toLocaleString('en-US')}-{areaRangeEnd.toLocaleString('en-US')} sqft</span>
                 <span className='beds'>{bedrooms} bd</span>
                 <span className='bathrooms'>{bathrooms} ba</span>

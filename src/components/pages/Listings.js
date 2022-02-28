@@ -3,7 +3,7 @@ import React, {useState, useEffect, useContext} from 'react'
 import {GlobalContext} from '../../store/GlobalState'
 import ListingList from '../common/custom/ListingList'
 import { getAllListingsAPI } from '../../services/ListingService'
-import SearchProperties from '../common/custom/SearchProperties';
+import SearchProperties from '../common/custom/SearchProperties'
 
 const Listings = () => {
 

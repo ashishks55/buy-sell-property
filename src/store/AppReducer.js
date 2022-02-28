@@ -13,8 +13,8 @@ const reducer = (state, action) => {
                 }
             }
         default: 
-            return;
+            return
     }
 }
 
-export default reducer;
+export default reducer

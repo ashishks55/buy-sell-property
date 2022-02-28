@@ -3,7 +3,7 @@ import Home from './components/pages/Home'
 import Listings from './components/pages/Listings'
 import ListingDetails from './components/pages/Listings'
 import { Routes, Route } from 'react-router-dom'
-import { GlobalProvider } from './store/GlobalState';
+import { GlobalProvider } from './store/GlobalState'
 
 function App() {
   return (

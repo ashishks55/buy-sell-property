@@ -1,15 +1,15 @@
 import './FeaturedListings.scss'
 import React, {useState, useEffect} from 'react'
-import { useNavigate } from "react-router";
+import { useNavigate } from 'react-router'
 import { getFeaturedListingsAPI } from '../../../services/ListingService'
 import ListingList from './ListingList'
-import Button from '../elements/Button';
+import Button from '../elements/Button'
 
 const FeaturedListings = () => {
 
 	const [listings, setListings] = useState([])
 	const [loading, setLoading] = useState(true)
-	const navigate = useNavigate();
+	const navigate = useNavigate()
 
 	useEffect(() => {
 		getFeaturedListings()
@@ -36,7 +36,7 @@ const FeaturedListings = () => {
 				loading 
 				? null 
 				:
-					<div className="has-text-centered see-more">
+					<div className='has-text-centered see-more'>
 						<Button
 							title='See More' 
 							className='is-primary'
