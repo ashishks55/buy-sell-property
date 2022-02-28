@@ -42,7 +42,6 @@ const PropertyFilters = ({closeModal}) => {
     }
 
     const onPropertyTypeSelect = (e) => {
-        console.log(e.target.name)
         const selected_type = e.target.name ? parseInt(e.target.name) : 0;
         if(selected_type){
             if(local_filters.property_type.includes(selected_type)){
