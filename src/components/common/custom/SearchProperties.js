@@ -1,5 +1,5 @@
 import './SearchProperties.scss'
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../../../store/GlobalState'
 import PropTypes from 'prop-types'
 import useDebounce from '../../utils/useDebounce'
@@ -19,10 +19,6 @@ const SearchProperties = ({showFilters}) => {
 	const updateSearch = useDebounce(city => {
 		setFilters({...filters, city})
 	}, 500)
-
-	useEffect(() => {
-        setInput(filters.city)
-	}, [filters.city])
 
 	const onChange = (input) => {
         setInput(input)
